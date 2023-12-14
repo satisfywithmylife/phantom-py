@@ -24,22 +24,4 @@ class BlockChainAccount():
             key_pair = priv_key_bytes+public_key_bytes
 
             return bip44_chg_ctx.PublicKey().ToAddress(), base58.Base58Encoder.Encode(key_pair)
-        
 
-
-mnemonic = 'oblige receive elite random advance payment wife detect tomorrow source borrow mixture'
-coin_types = {
-    Bip44Coins.ETHEREUM: 'ethereum(evm)',
-    Bip44Coins.SOLANA: 'solana',
-    # Bip44Coins.TERRA: 'luna',
-    # Bip44Coins.DASH: 'dash',
-    # .....
-    # also support other chain, such as file coin, eth classic, doge, dash, luna ....
-    # example change coin_type as Bip44Coins.EOS, Bip44Coins.TERRA .....
-    # test the result and compare it with main web wallet(metamask, mathwallet, trustwallet...), because it may use diffrent derive path to generate wallet
-}
-for coin_type in coin_types.keys():
-    chain_name = coin_types[coin_type]
-    bca = BlockChainAccount(mnemonic=mnemonic, coin_type=coin_type, password='')
-    address, pk = bca.get_address_pk()
-    print(f'{chain_name} mainnet address: {address}, private key: {pk}')
