@@ -63,6 +63,28 @@ ethereum(evm) mainnet address: 0x58eE4fd2e1D2c970E1fAA8f888CFd1cA27BD4A28, priva
 solana mainnet address: 6RVympP2ZLR3T3KTSiqzCcBTvjRhT4UDCCt8AsbkYg2b, private key: 58hvcp5Lje9us9Q1QJdWV8aATcJKeHNZudyN9jWuiNYtRGFhJrH97Qe4ew8VmxLx5VCEYEuHGWRZuaFLr6A4euqR
 ```
 
+## init account with python
+
+```
+pip install solana, web3
+```
+
+## test solana, eth
+
+```
+from solders.keypair import Keypair
+from web3 import Web3
+# solana
+solana_private_key = '58hvcp5Lje9us9Q1QJdWV8aATcJKeHNZudyN9jWuiNYtRGFhJrH97Qe4ew8VmxLx5VCEYEuHGWRZuaFLr6A4euqR'
+kp = Keypair().from_base58_string(solana_private_key) # private key
+print(kp.pubkey()) # get "6RVympP2ZLR3T3KTSiqzCcBTvjRhT4UDCCt8AsbkYg2b", solana address
+# eth
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com/v1/mainnet"))
+eth_private_key = '4a68dfa8cb029fb5490cb36bb9c4c6523bada89134e40d2498cf83d7b4295cfb'
+ac = w3.eth.account.from_key(eth_private_key) # private_key
+print(ac.address) # get "0x58eE4fd2e1D2c970E1fAA8f888CFd1cA27BD4A28", eth address
+```
+
 ## import the mnemonic seed to phantom wallet , get result
 ![phantom](https://github.com/satisfywithmylife/phantom-py/assets/30144807/5eecbe32-3c6a-4b60-9cc1-504b8dc8b413)
 
