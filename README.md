@@ -67,6 +67,6 @@ solana mainnet address: 6RVympP2ZLR3T3KTSiqzCcBTvjRhT4UDCCt8AsbkYg2b, private ke
 ![phantom](https://github.com/satisfywithmylife/phantom-py/assets/30144807/5eecbe32-3c6a-4b60-9cc1-504b8dc8b413)
 
 # last but important!
-1. test the result and compare it with main web wallet app(such as: metamask, mathwallet, trustwallet...)
+1. test the result and compare it with main web wallet app(such as: metamask, mathwallet, trustwallet...) before you deposit crypto assets to the address
 2. some wallet may get diffrent result, because it may use diffrent derive path to generate wallet
 3. learn about hd-wallet principle by your self
