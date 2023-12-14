@@ -63,6 +63,9 @@ ethereum(evm) mainnet address: 0x58eE4fd2e1D2c970E1fAA8f888CFd1cA27BD4A28, priva
 solana mainnet address: 6RVympP2ZLR3T3KTSiqzCcBTvjRhT4UDCCt8AsbkYg2b, private key: 58hvcp5Lje9us9Q1QJdWV8aATcJKeHNZudyN9jWuiNYtRGFhJrH97Qe4ew8VmxLx5VCEYEuHGWRZuaFLr6A4euqR
 ```
 
+## import the mnemonic seed to phantom wallet , get result
+![phantom](https://github.com/satisfywithmylife/phantom-py/assets/30144807/5eecbe32-3c6a-4b60-9cc1-504b8dc8b413)
+
 ## init account with python
 
 ```
@@ -84,9 +87,6 @@ eth_private_key = '4a68dfa8cb029fb5490cb36bb9c4c6523bada89134e40d2498cf83d7b4295
 ac = w3.eth.account.from_key(eth_private_key) # private_key
 print(ac.address) # get "0x58eE4fd2e1D2c970E1fAA8f888CFd1cA27BD4A28", eth address
 ```
-
-## import the mnemonic seed to phantom wallet , get result
-![phantom](https://github.com/satisfywithmylife/phantom-py/assets/30144807/5eecbe32-3c6a-4b60-9cc1-504b8dc8b413)
 
 # last but important!
 1. test the result and compare it with main web wallet app(such as: metamask, mathwallet, trustwallet...) before you deposit crypto assets to the address
