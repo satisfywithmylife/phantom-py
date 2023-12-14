@@ -22,7 +22,7 @@ class BlockChainAccount():
         seed_bytes = Bip39SeedGenerator(self.mnemonic).Generate(self.password)
         if self.coin_type != Bip44Coins.SOLANA:
             bip44_mst_ctx = Bip44.FromSeed(seed_bytes, self.coin_type).DeriveDefaultPath()
-            return bip44_mst_ctx.PuwoblicKey().ToAddress(), bip44_mst_ctx.PrivateKey().Raw().ToHex()
+            return bip44_mst_ctx.PublicKey().ToAddress(), bip44_mst_ctx.PrivateKey().Raw().ToHex()
         else:
             bip44_mst_ctx = Bip44.FromSeed(seed_bytes, self.coin_type)
            
