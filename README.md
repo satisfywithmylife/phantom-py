@@ -69,4 +69,4 @@ solana mainnet address: 6RVympP2ZLR3T3KTSiqzCcBTvjRhT4UDCCt8AsbkYg2b, private ke
 # last but important!
 1. test the result and compare it with main web wallet app(such as: metamask, mathwallet, trustwallet...)
 2. some wallet may get diffrent result, because it may use diffrent derive path to generate wallet
-3. learn about hd-wallet principle by self
+3. learn about hd-wallet principle by your self
