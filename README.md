@@ -11,11 +11,11 @@ from bip_utils import Bip39SeedGenerator, Bip44Coins, Bip44, base58, Bip44Change
 
 class BlockChainAccount():
 
-    def __init__(self, mnemonic, coin_type=Bip44Coins.ETHEREUM, pasword='') -> None:
+    def __init__(self, mnemonic, coin_type=Bip44Coins.ETHEREUM, password='') -> None:
 
         self.mnemonic = mnemonic.strip()
         self.coin_type = coin_type
-        self.password = pasword # if have password
+        self.password = password # if have password
 
     def get_address_pk(self):
 
